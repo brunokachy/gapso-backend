@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class ProductLevel implements Serializable {
+public class ProductLevel implements Serializable {
 
     @Id
     @GeneratedValue

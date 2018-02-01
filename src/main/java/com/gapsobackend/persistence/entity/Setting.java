@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class Setting implements Serializable {
+public class Setting implements Serializable {
 
     @Id
     @GeneratedValue

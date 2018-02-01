@@ -16,7 +16,7 @@ import javax.persistence.UniqueConstraint;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(uniqueConstraints = {
     @UniqueConstraint(columnNames = {"business_id", "productCode"})})
-class Product implements Serializable {
+public class Product implements Serializable {
 
     @Id
     @GeneratedValue

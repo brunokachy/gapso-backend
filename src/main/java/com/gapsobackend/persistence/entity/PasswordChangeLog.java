@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 
 @Entity
-class PasswordChangeLog implements Serializable {
+public class PasswordChangeLog implements Serializable {
 
     @Id
     @GeneratedValue

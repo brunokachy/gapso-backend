@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 
 @Entity
-class PortalUserRole implements Serializable {
+public class PortalUserRole implements Serializable {
 
     @Id
     @GeneratedValue

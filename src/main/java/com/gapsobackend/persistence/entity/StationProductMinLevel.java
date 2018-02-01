@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class StationProductMinLevel implements Serializable {
+public class StationProductMinLevel implements Serializable {
 
     @Id
     @GeneratedValue

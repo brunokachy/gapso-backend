@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class DispensingPointAttendant implements Serializable {
+public class DispensingPointAttendant implements Serializable {
 
     @Id
     @GeneratedValue

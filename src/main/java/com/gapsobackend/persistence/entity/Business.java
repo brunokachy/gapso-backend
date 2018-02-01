@@ -17,7 +17,7 @@ import javax.persistence.Temporal;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class Business implements Serializable {
+public class Business implements Serializable {
 
     @Id
     @GeneratedValue

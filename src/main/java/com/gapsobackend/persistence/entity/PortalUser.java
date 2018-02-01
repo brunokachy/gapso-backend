@@ -10,11 +10,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
-import javax.persistence.Transient;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class PortalUser implements Serializable {
+public class PortalUser implements Serializable {
 
     @Id
     @GeneratedValue
@@ -35,12 +34,6 @@ class PortalUser implements Serializable {
     @Lob
     @Column(unique = true)
     private String token;
-    @Transient
-    private String designation;
-    @Transient
-    private Long businessId;
-    @Transient
-    private Long stationId;
 
     public PortalUser() {
     }
@@ -129,30 +122,6 @@ class PortalUser implements Serializable {
         this.token = token;
     }
 
-    public String getDesignation() {
-        return designation;
-    }
-
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
-
-    public Long getBusinessId() {
-        return businessId;
-    }
-
-    public void setBusinessId(Long businessId) {
-        this.businessId = businessId;
-    }
-
-    public Long getStationId() {
-        return stationId;
-    }
-
-    public void setStationId(Long stationId) {
-        this.stationId = stationId;
-    }
-
     @Override
     public int hashCode() {
         int hash = 7;
@@ -176,11 +145,6 @@ class PortalUser implements Serializable {
             return false;
         }
         return true;
-    }
-
-    @Override
-    public String toString() {
-        return "PortalUser{" + "id=" + id + ", firstName=" + firstName + ", middleName=" + middleName + ", surname=" + surname + ", emailAddress=" + emailAddress + ", phoneNumber=" + phoneNumber + ", password=" + password + ", createdDate=" + createdDate + ", modifiedDate=" + modifiedDate + ", active=" + active + ", token=" + token + ", designation=" + designation + ", businessId=" + businessId + ", stationId=" + stationId + '}';
     }
 
 }

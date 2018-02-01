@@ -13,7 +13,7 @@ import javax.persistence.Transient;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class DailySales implements Serializable {
+public class DailySales implements Serializable {
 
     @Id
     @GeneratedValue

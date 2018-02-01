@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 
 @Entity
-class PortalUserSessionLog implements Serializable {
+public class PortalUserSessionLog implements Serializable {
 
     @Id
     @GeneratedValue
@@ -23,7 +23,7 @@ class PortalUserSessionLog implements Serializable {
     private String userEmail;
 
     @Enumerated(EnumType.STRING)
-    private PushRegister.Platform platform;
+    private Platform platform;
 
     private String ipaddress;
 
@@ -52,7 +52,7 @@ class PortalUserSessionLog implements Serializable {
         this.userEmail = userEmail;
     }
 
-    public PushRegister.Platform getPlatform() {
+    public Platform getPlatform() {
         return platform;
     }
 

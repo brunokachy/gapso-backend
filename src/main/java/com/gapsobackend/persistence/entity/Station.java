@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 
 @Entity
-class Station implements Serializable {
+public class Station implements Serializable {
 
     @Id
     @GeneratedValue

@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class PaymentOption implements Serializable {
+public class PaymentOption implements Serializable {
 
     @Id
     @GeneratedValue
